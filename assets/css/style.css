@@ -1,0 +1,495 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #d1c8c0;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+p {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+/* HEADER =nav bar*/
+
+.header {
+    margin: 2rem;
+    padding: 2rem;
+    font-family: 'Shrikhand', cursive;
+    color: black;
+    letter-spacing: 0.5rem;
+}
+
+.header div {
+    padding-top: 3rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    text-align: right;
+    display: inline;
+    font-family: 'Shrikhand',cursive;
+    font-size: 2rem;
+    color:rgb(238, 231, 217);
+}
+
+.header div ul {
+    list-style-type: none;
+}
+
+.header div ul li {
+    display: inline-block;
+    margin-left: 2rem;
+    text-decoration: none;
+    font-size: larger;
+}
+.header div ul li:hover{
+    text-shadow: 2px 3px rgb(108, 107, 107);
+}
+
+
+
+/* intro 1: hi, my name is */
+.intro1 {
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+/* intro2: Addi Guskey */
+.intro2 {
+    font-size: 115px;
+    font-family: 'Shrikhand', cursive;
+    text-shadow:4px 4px rgb(238, 231, 217);
+    letter-spacing: 6px;
+    transition:all 1s;
+}
+
+/* intro 3: I am excited to be your new developer !*/
+.intro3 {
+    font-size: 55px;
+}
+/* intro4: based in Denver, CO */
+.intro4 {
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.intro-text {
+    padding: 15rem;
+}
+
+/* content BOXES */
+.about-me, .projects, .contact {
+    width: 80%;
+    height: 40%;
+    padding: 2rem;
+    border-radius: 10mm;
+    border-color:rgba(96, 75, 61, 0.36);
+    background-color: rgba(150, 140, 130, 0.3);
+    margin-top: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6rem;
+}
+.profile-pic img {  
+    width: 11rem;
+    border-radius: 50%;
+    float: right;
+    margin-bottom: 0.5rem;
+    margin-right: 4rem;
+    margin-left: 4rem;
+}
+
+/* CONTENT BOX HEADERS */
+.about-me h2, .projects h2, .contact h2{
+    margin-left: 4rem;
+    font-family: 'Shrikhand',
+    cursive;
+    font-size: 35px;
+    color: rgb(150, 140, 130);
+    text-shadow: 2px 2px #dcd2c9;
+}
+
+/* CONTENT BOX P'S */
+.about-me p, .projects p, .contact p {
+    margin-left: 6rem;
+    margin-right: 5rem;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* applications: three images- looking similar to apple app icons (black and white), when you hover on one, gains color and gets larger, deploy links */
+
+.app-projects {
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+}
+.app1 img, .app2 img, .app3 img {
+    width: 150px;
+    height: 150px;
+    border-radius: 30%;
+    border: 5px solid black;
+    filter: grayscale(100%);
+    transition: transform 1s;
+    margin-inline: 25px;
+}
+
+/* "apps" gain color on HOVER */
+.app1 img:hover, .app2 img:hover, .app3 img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.2);
+}
+
+/* SOCIALS SDIE BAR */
+.socials {
+    position: fixed;
+    top: 25px;
+}
+
+/* socials buttons tucked in on default */
+.socials ul {
+    transform: translate(-250px, 0);
+}
+
+
+/* logos sizing */
+.socials img {
+    max-width: 15%;
+    height: auto;
+}
+/* social buttons */
+.socials ul li {
+    display: block;
+    margin: 5px;
+    background: rgba(138, 138, 138, 0.36);
+    width: 300px;
+    text-align: right;
+    padding: 20px;
+    border-radius: 10mm;
+    transition: all 1s;
+}
+
+/* social buttons pan out on HOVER */
+.socials ul li:hover {
+    transform: translate(80px, 0);
+}
+
+/* FOOTER !! */
+.footer p {
+    align-items: right;
+    font-size: 1rem;
+}
+
+
+/* for various screen sizes: be mindful of texts, images */
+
+/* MEDIA QUERY 1 */
+@media screen and (max-width: 992px) {
+    .header div ul li {
+        font-size: 1.3rem;
+        letter-spacing: 0.2rem;
+        display: flex;
+        margin-left: 17rem;
+    }
+
+    .intro1,
+    .intro4 {
+        font-size: 0.8rem;
+    }
+
+    .intro2 {
+        font-size: 2.3rem;
+        text-shadow:2px 2px rgb(238, 231, 217);
+    }
+
+    .intro3 {
+        font-size: 1.2rem;
+    }
+    .intro-text {
+        padding: 2.5rem;
+    }
+    .about-me,
+    .projects,
+    .contact {
+        width: 43%;
+        margin-left: 2rem;
+        margin-right: 1rem;
+    }
+
+    .profile-pic img {
+        width: 30%;
+        margin-right: 0.5rem;
+
+    }
+
+    .about-me h2,
+    .projects h2,
+    .contact h2 {
+        margin-left: 1.5rem;
+        font-size: 1.5rem;;
+    }
+
+    .about-me p,
+    .projects p,
+    .contact p {
+        margin-left: 1.5rem;
+        margin-right: 0.5rem;
+        font-size: 1rem;
+    }
+
+
+    .app1 img,
+    .app2 img,
+    .app3 img {
+        width: 80%;
+        height: 95%;
+        display: inline-block;
+    }
+    .socials ul {
+        transform: translate(-262px, 0);
+    }
+    
+    .socials img {
+        max-width: 12%;
+        height: auto;
+    }
+
+    .socials ul li {
+        padding: 0.7rem;
+    }
+    .footer p {
+        font-size: 12px;
+    }
+}
+
+/* MEDIA QUERY 2 */
+@media screen and (max-width: 768px) {
+    .header div ul li {
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
+        display: flex;
+        margin-left: 13rem;
+    }
+
+    .intro1,
+    .intro4 {
+        font-size: 0.8rem;
+    }
+
+    .intro2 {
+        font-size: 2.5rem;
+    }
+
+    .intro3 {
+        font-size: 1rem;
+    }
+    .intro-text {
+        padding: 1.5rem;
+    }
+
+    .about-me,
+    .projects,
+    .contact {
+        width: 45%;
+        margin-left: 1rem;
+    }
+
+    .profile-pic img {
+        width: 35%;
+        margin-top: 1rem;
+        margin-right: 0.2rem;
+    }
+
+    .about-me h2,
+    .projects h2,
+    .contact h2 {
+        margin-left: 1rem;
+        font-size: 1.2rem;
+        
+    }
+
+    .about-me p,
+    .projects p,
+    .contact p {
+        margin-left: 1rem;
+        amrgin-right: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+
+    .app1 img, .app2 img, .app3 img {
+        display: inline-block;
+        justify-content: space-around;
+        width: 85%;
+        heigh: 85%;
+    }
+    .socials ul {
+        transform: translate(-270px, 0);
+    }
+    
+    .socials img {
+        max-width: 10%;
+        height: auto;
+    }
+    .socials ul li {
+        padding: 0.4rem;
+    }
+
+    .footer p {
+        font-size: 9px;
+        text-align: center;
+    }
+}
+
+/* MEDIA QUERY 3 */
+@media screen and (max-width: 555px) {
+    .header div ul li {
+        display: felx;
+        font-size: 0.7rem;
+        margin-left: 6rem;
+    }
+
+    .intro1,
+    .intro4 {
+        font-size: 0.5rem;
+    }
+
+    .intro2 {
+        font-size: 1.8rem;
+        letter-spacing: 0.2rem;;
+    }
+
+    .intro3 {
+        font-size: 0.7rem;
+    }
+
+    .about-me,
+    .projects,
+    .contact {
+    width: 40%;
+    margin-left: 2rem;
+    margin-right: 1rem;
+    }
+    .profile-pic img {
+        width: 35%;
+    }
+    .about-me h2,
+    .projects h2,
+    .contact h2 {
+        margin-left: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .about-me p,
+    .projects p,
+    .contact p {
+        margin-left: 0.3rem;
+        margin-right: 0.2rem;
+        font-size: 0.6rem;
+    }
+
+ 
+    .app1 img,
+    .app2 img,
+    .app3 img {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        width: 80%;
+        height: 90%;
+    }
+    .socials ul {
+        transform: translate(-270px, 0);
+    }
+    
+    .socials img {
+        max-width: 10%;
+        height: auto;
+    }
+    .socials ul li {
+        padding: 0.4rem;
+    }
+    .footer {
+    text-align: center;
+    font-size: 7px;
+    }
+}
+
+
+/* MEDIA QUERY 4 */
+@media screen and (max-width: 390px) {
+    .header div ul li {
+        display: flex;
+        font-size: 1rem;
+        margin-left: 3rem;
+        font-size: 0.5rem;
+    }
+    
+    .intro1,
+    .intro4 {
+        font-size: 0.3rem;
+    }
+    
+    .intro2 {
+        font-size: 1.2rem;
+    }
+    
+    .intro3 {
+        font-size: 0.5rem;
+    }
+    .intro-text {
+        padding: 1rem;
+    }
+
+    .about-me,
+    .projects,
+    .contact {
+        width: 42%;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .profile-pic img {
+        width: 36%;
+        margin-left: 0.1rem;
+    }
+
+    .about-me h2,
+    .projects h2,
+    .contact h2 {
+        margin-left: 0.1rem;
+        margin-right: 0.5rem;
+        font-size: 0.7rem;
+    }
+    .about-me p, .projects p, .contact p {
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
+        font-size: 0.5rem;
+    }
+    
+    .app1 img, .app2 img, .app3 img {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        width:80%;
+        height:90%;
+        border-width: 1px;
+    }
+    .socials ul {
+        transform: translate(-275px, 0);
+    }
+    .socials img {
+        max-width: 9%;
+        height: auto;
+    }
+    .socials ul li {
+        padding: 0.2rem;
+    }
+    .footer {
+        text-align: center;
+        font-size: 5px;
+    }
+}
