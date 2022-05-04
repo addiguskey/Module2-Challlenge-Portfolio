@@ -190,49 +190,49 @@ p {
 /* for various screen sizes: be mindful of texts, images */
 
 /* MEDIA QUERY 1 */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 912px) {
     .header div ul li {
-        font-size: 1.3rem;
+        font-size: 2.2rem;
         letter-spacing: 0.2rem;
         display: flex;
-        margin-left: 17rem;
+        margin-left: 37rem;
     }
 
     .intro1,
     .intro4 {
-        font-size: 0.8rem;
+        font-size: 2rem;
     }
 
     .intro2 {
-        font-size: 2.3rem;
+        font-size: 4.5rem;
         text-shadow:2px 2px rgb(238, 231, 217);
     }
 
     .intro3 {
-        font-size: 1.2rem;
+        font-size: 2.4rem;
     }
     .intro-text {
-        padding: 2.5rem;
+        padding: 5rem;
     }
     .about-me,
     .projects,
     .contact {
-        width: 43%;
+        width: 92%;
         margin-left: 2rem;
         margin-right: 1rem;
     }
 
     .profile-pic img {
-        width: 30%;
+        width: 35%;
         margin-right: 0.5rem;
-
+        margin-top: 1.5rem;
     }
 
     .about-me h2,
     .projects h2,
     .contact h2 {
         margin-left: 1.5rem;
-        font-size: 1.5rem;;
+        font-size: 2.2rem;;
     }
 
     .about-me p,
@@ -240,7 +240,7 @@ p {
     .contact p {
         margin-left: 1.5rem;
         margin-right: 0.5rem;
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
 
@@ -252,56 +252,56 @@ p {
         display: inline-block;
     }
     .socials ul {
-        transform: translate(-262px, 0);
+        transform: translate(-235px, 0);
     }
     
     .socials img {
-        max-width: 12%;
+        max-width: 20%;
         height: auto;
     }
 
     .socials ul li {
-        padding: 0.7rem;
+        padding: 1rem;
     }
     .footer p {
         font-size: 12px;
     }
 }
 
-/* MEDIA QUERY 2 */
+/* MEDIA QUERY 2 768: IPAD MINI */
 @media screen and (max-width: 768px) {
     .header div ul li {
-        font-size: 1rem;
+        font-size: 1.8rem;
         letter-spacing: 0.2rem;
         display: flex;
-        margin-left: 13rem;
+        margin-left: 31rem;
     }
 
     .intro1,
     .intro4 {
-        font-size: 0.8rem;
+        font-size: 1.5rem;
     }
 
     .intro2 {
-        font-size: 2.5rem;
+        font-size: 4.5rem;
     }
 
     .intro3 {
-        font-size: 1rem;
+        font-size: 2.5rem;
     }
     .intro-text {
-        padding: 1.5rem;
+        padding: 4rem;
     }
 
     .about-me,
     .projects,
     .contact {
-        width: 45%;
+        width: 95%;
         margin-left: 1rem;
     }
 
     .profile-pic img {
-        width: 35%;
+        width: 30%;
         margin-top: 1rem;
         margin-right: 0.2rem;
     }
@@ -310,7 +310,7 @@ p {
     .projects h2,
     .contact h2 {
         margin-left: 1rem;
-        font-size: 1.2rem;
+        font-size: 2rem;
         
     }
 
@@ -319,7 +319,7 @@ p {
     .contact p {
         margin-left: 1rem;
         amrgin-right: 0.5rem;
-        font-size: 0.8rem;
+        font-size: 1.2rem;
     }
 
 
@@ -330,15 +330,15 @@ p {
         heigh: 85%;
     }
     .socials ul {
-        transform: translate(-270px, 0);
+        transform: translate(-260px, 0);
     }
     
     .socials img {
-        max-width: 10%;
+        max-width: 12%;
         height: auto;
     }
     .socials ul li {
-        padding: 0.4rem;
+        padding: 0.8rem;
     }
 
     .footer p {
@@ -351,28 +351,28 @@ p {
 @media screen and (max-width: 555px) {
     .header div ul li {
         display: felx;
-        font-size: 0.7rem;
-        margin-left: 6rem;
+        font-size: 1.2rem;
+        margin-left: 14rem;
     }
 
     .intro1,
     .intro4 {
-        font-size: 0.5rem;
+        font-size: 1.2rem;
     }
 
     .intro2 {
-        font-size: 1.8rem;
+        font-size: 2.7rem;
         letter-spacing: 0.2rem;;
     }
 
     .intro3 {
-        font-size: 0.7rem;
+        font-size: 1.7rem;
     }
 
     .about-me,
     .projects,
     .contact {
-    width: 40%;
+    width: 85%;
     margin-left: 2rem;
     margin-right: 1rem;
     }
@@ -383,7 +383,7 @@ p {
     .projects h2,
     .contact h2 {
         margin-left: 0.5rem;
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .about-me p,
@@ -391,7 +391,7 @@ p {
     .contact p {
         margin-left: 0.3rem;
         margin-right: 0.2rem;
-        font-size: 0.6rem;
+        font-size: 0.9rem;
     }
 
  
@@ -421,40 +421,40 @@ p {
 }
 
 
-/* MEDIA QUERY 4 */
+/* MEDIA QUERY 4 390: IPHONE12*/
 @media screen and (max-width: 390px) {
     .header div ul li {
         display: flex;
         font-size: 1rem;
-        margin-left: 3rem;
-        font-size: 0.5rem;
+        margin-left: 12rem;
+        font-size: 1rem;
     }
     
     .intro1,
     .intro4 {
-        font-size: 0.3rem;
-    }
-    
-    .intro2 {
         font-size: 1.2rem;
     }
     
+    .intro2 {
+        font-size: 3.2rem;
+    }
+    
     .intro3 {
-        font-size: 0.5rem;
+        font-size: 1.5rem;
     }
     .intro-text {
-        padding: 1rem;
+        padding: 3rem;
     }
 
     .about-me,
     .projects,
     .contact {
-        width: 42%;
+        width: 92%;
         margin-left: 1rem;
         margin-right: 1rem;
     }
     .profile-pic img {
-        width: 36%;
+        width: 40%;
         margin-left: 0.1rem;
     }
 
@@ -463,12 +463,12 @@ p {
     .contact h2 {
         margin-left: 0.1rem;
         margin-right: 0.5rem;
-        font-size: 0.7rem;
+        font-size: 1rem;
     }
     .about-me p, .projects p, .contact p {
         margin-left: 0.1rem;
         margin-right: 0.1rem;
-        font-size: 0.5rem;
+        font-size: 0.8rem;
     }
     
     .app1 img, .app2 img, .app3 img {
